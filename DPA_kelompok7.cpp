@@ -21,13 +21,15 @@ double hitungKaloriKeluar(int jumlah_aktivitas) {
 int main() {
     double kebutuhanprotein;
     double beratbadan;
+    double kalori_keluar;
+    int jumlah_aktivitas;
 
-    cout<<"masukan berat badan/kg : ";
+    cout<<"masukan berat badan anda /kg : ";
     cin>>beratbadan;
     
     kebutuhanprotein = htiungkebutuhanprotein(beratbadan);
 
-    cout<<kebutuhanprotein<<" gram protein"<<endl;
+    cout<<kebutuhanprotein<<" gram protein"<<"/hari"endl;
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
 }
 
