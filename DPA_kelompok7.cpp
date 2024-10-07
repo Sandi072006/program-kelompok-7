@@ -8,12 +8,13 @@ double htiungkebutuhanprotein(double beratbadan) {
 
 double hitungKaloriKeluar(int jumlah_aktivitas) {
     double total_kalori_keluar = 0;
-    for (int i = 1; i <= jumlah_aktivitas; ++i) {
+    for (int i = 1; i <= jumlah_aktivitas; i++) {
         double kalori_aktivitas;
         cout << "Masukkan jumlah kalori yang terbakar dari aktivitas ke-" << i << ": ";
         cin >> kalori_aktivitas;
         total_kalori_keluar += kalori_aktivitas;
     }
+   
     return total_kalori_keluar;
 } 
 
