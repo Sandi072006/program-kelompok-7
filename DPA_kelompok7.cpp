@@ -18,3 +18,4 @@ int main() {
     cout<<kebutuhanprotein<<" gram protein"<<endl;
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
 }
+tes aja
