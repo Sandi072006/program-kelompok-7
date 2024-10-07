@@ -6,6 +6,17 @@ double htiungkebutuhanprotein(double beratbadan) {
    
 }
 
+double hitungKaloriKeluar(int jumlah_aktivitas) {
+    double total_kalori_keluar = 0;
+    for (int i = 1; i <= jumlah_aktivitas; ++i) {
+        double kalori_aktivitas;
+        cout << "Masukkan jumlah kalori yang terbakar dari aktivitas ke-" << i << ": ";
+        cin >> kalori_aktivitas;
+        total_kalori_keluar += kalori_aktivitas;
+    }
+    return total_kalori_keluar;
+} 
+
 int main() {
     double kebutuhanprotein;
     double beratbadan;
@@ -18,4 +29,6 @@ int main() {
     cout<<kebutuhanprotein<<" gram protein"<<endl;
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
 }
+
+
 tes aja
