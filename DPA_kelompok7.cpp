@@ -79,7 +79,6 @@ int main() {
 
     cout<<kebutuhanprotein<<" gram protein"<<"/hari"endl;
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
-}
 
     cout << "Berapa jenis makanan yang Anda konsumsi hari ini? ";
     cin >> jumlah_makanan;
@@ -92,7 +91,7 @@ int main() {
     cin>>jumlah_aktivitas;
     kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
     cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal" << endl;
-
+}
 
 
 
