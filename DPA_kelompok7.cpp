@@ -2,8 +2,10 @@
 using namespace std;
 
 double htiungkebutuhanprotein(double beratbadan) {
-   return 0.8 * beratbadan;
-   
+   double kebutuhanprotein = 0.8;
+          kebutuhanprotein = 0.8 * beratbadan;
+
+   return kebutuhanprotein;
 }
 
 double hitungKaloriMasuk(int jumlah_makanan) {
