@@ -42,10 +42,23 @@ double hitungKaloriKeluar(int jumlah_aktivitas) {
     return total_kalori_keluar;
 } 
 
+void hitungSaldoKalori(double kalori_masuk, double kalori_keluar) {
+    double saldo_kalori = kalori_masuk - kalori_keluar;
+
+    if (saldo_kalori > 0) {
+        cout << "Anda mengalami surplus kalori sebesar " << saldo_kalori << " kal hari ini." << endl;
+    } else if (saldo_kalori < 0) {
+        cout << "Anda mengalami defisit kalori sebesar " << -saldo_kalori << " kal hari ini." << endl;
+    } else {
+        cout << "Keseimbangan kalori Anda netral hari ini." << endl;
+    }
+}
+
 int main() {
     double kebutuhanprotein;
     double beratbadan;
     double kalori_keluar;
+    double kalori_masuk;
     double protein_masuk;
     int jumlah_aktivitas;
 
@@ -58,10 +71,17 @@ int main() {
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
 }
 
-cout<<"Berapa jenis aktivitas yang anda lakukan hari ini?";
-cin>>jumlah_aktivitas;
-kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
-cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal\n";
+    cout << "Berapa jenis makanan yang Anda konsumsi hari ini? ";
+    cin >> jumlah_makanan;
+    protein_masuk = hitungproteinMasuk(jumlah_makanan);
+    cout << "Total protein yang masuk hari ini: " << protein_masuk << " gram" << endl << endl;
+    kalori_masuk = hitungKaloriMasuk(jumlah_makanan);
+    cout << "Total kalori yang masuk hari ini: " << kalori_masuk << " kal" << endl << endl;
+
+    cout<<"Berapa jenis aktivitas yang anda lakukan hari ini?";
+    cin>>jumlah_aktivitas;
+    kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
+    cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal" << endl;
 
 
 
@@ -70,7 +90,3 @@ cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal\n";
 
 
 
-cout << "Berapa jenis makanan yang Anda konsumsi hari ini? ";
-cin >> jumlah_makanan;
-kalori_masuk = hitungKaloriMasuk(jumlah_makanan);
-cout << "\nTotal kalori yang masuk hari ini: " << kalori_masuk << " kcal\n";
