@@ -71,13 +71,14 @@ int main() {
     double kalori_masuk;
     double protein_masuk;
     int jumlah_aktivitas;
+    int jumlah_makanan;
 
     cout<<"masukan berat badan anda /kg : ";
     cin>>beratbadan;
     
     kebutuhanprotein = htiungkebutuhanprotein(beratbadan);
 
-    cout<<kebutuhanprotein<<" gram protein"<<"/hari"endl;
+    cout<<kebutuhanprotein<<" gram protein / hari "<<endl;
     cout<<"jumlah protein tersebut yang harus kamu penuhi untuk memenuhi kebutuhan protein harianmu"<<endl;
 
     cout << "Berapa jenis makanan yang Anda konsumsi hari ini? ";
