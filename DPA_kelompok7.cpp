@@ -8,6 +8,17 @@ double htiungkebutuhanprotein(double beratbadan) {
    return kebutuhanprotein;
 }
 
+double hitungproteinMasuk(int jumlah_makanan) {
+    double total_protein_masuk = 0;
+    for (int i = 1; i <= jumlah_makanan; ++i) {
+        double protein_makanan;
+        cout << "Masukkan jumlah protein makanan ke-" << i << ": ";
+        cin >> protein_makanan;
+        total_protein_masuk += protein_makanan;
+    }
+    return total_protein_masuk;
+}
+
 double hitungKaloriMasuk(int jumlah_makanan) {
     double total_kalori_masuk = 0;
     for (int i = 1; i <= jumlah_makanan; ++i) {
@@ -35,6 +46,7 @@ int main() {
     double kebutuhanprotein;
     double beratbadan;
     double kalori_keluar;
+    double protein_masuk;
     int jumlah_aktivitas;
 
     cout<<"masukan berat badan anda /kg : ";
