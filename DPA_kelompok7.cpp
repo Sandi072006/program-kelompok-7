@@ -87,11 +87,14 @@ int main() {
     kalori_masuk = hitungKaloriMasuk(jumlah_makanan);
     cout << "Total kalori yang masuk hari ini: " << kalori_masuk << " kal" << endl << endl;
 
-    cout<<"Berapa jenis aktivitas yang anda lakukan hari ini?";
-    cin>>jumlah_aktivitas;
+    cout << "Berapa jenis aktivitas yang Anda lakukan hari ini? ";
+    cin >> jumlah_aktivitas;
     kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
-    cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal" << endl;
+    cout << "Total kalori yang keluar hari ini: " << kalori_keluar << " kal" << endl << endl;
 
+    hitungjumlahprotein(protein_masuk, kebutuhanprotein);
+    hitungSaldoKalori(kalori_masuk, kalori_keluar);
+   
     return 0;
 }
 
