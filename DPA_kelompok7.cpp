@@ -91,6 +91,8 @@ int main() {
     cin>>jumlah_aktivitas;
     kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
     cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal" << endl;
+
+    return 0;
 }
 
 
