@@ -42,6 +42,16 @@ double hitungKaloriKeluar(int jumlah_aktivitas) {
     return total_kalori_keluar;
 } 
 
+void hitungjumlahprotein(double protein_masuk, double kebutuhanprotein) {
+    double jumlahprotein = protein_masuk - kebutuhanprotein;
+
+    if (jumlahprotein > 0 ) {
+        cout << "Anda telah mencukupi kebutuhan protein hari ini." << endl;
+    } else if (jumlahprotein < kebutuhanprotein) {
+        cout << "Anda kurang mencukupi kebutuhan " << jumlahprotein << " gram protein hari ini." << endl;
+    }
+}
+
 void hitungSaldoKalori(double kalori_masuk, double kalori_keluar) {
     double saldo_kalori = kalori_masuk - kalori_keluar;
 
