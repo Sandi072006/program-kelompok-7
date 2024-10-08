@@ -6,6 +6,17 @@ double htiungkebutuhanprotein(double beratbadan) {
    
 }
 
+double hitungKaloriMasuk(int jumlah_makanan) {
+    double total_kalori_masuk = 0;
+    for (int i = 1; i <= jumlah_makanan; ++i) {
+        double kalori_makanan;
+        cout << "Masukkan jumlah kalori makanan ke-" << i << ": ";
+        cin >> kalori_makanan;
+        total_kalori_masuk += kalori_makanan;
+    }
+    return total_kalori_masuk;
+}
+
 double hitungKaloriKeluar(int jumlah_aktivitas) {
     double total_kalori_keluar = 0;
     for (int i = 1; i <= jumlah_aktivitas; i++) {
@@ -38,4 +49,14 @@ cin>>jumlah_aktivitas;
 kalori_keluar = hitungKaloriKeluar(jumlah_aktivitas);
 cout << "Total kalori yang keluar hari ini : " << kalori_keluar << "kcal\n";
 
-tes aja
+
+
+
+
+
+
+
+cout << "Berapa jenis makanan yang Anda konsumsi hari ini? ";
+cin >> jumlah_makanan;
+kalori_masuk = hitungKaloriMasuk(jumlah_makanan);
+cout << "\nTotal kalori yang masuk hari ini: " << kalori_masuk << " kcal\n";
